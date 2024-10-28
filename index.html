@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</title>
+    <p id="description">Simple survey form using HTML and CSS.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label"><small>Your name</small></label>
+      <input id="name" type="text" required="true" placeholder="User0">
+      <br>
+      <label for="email" id="email-label"><small>Your E-Mail address</small></label>
+      <input id="email" type="email" required="true" placeholder="user0@is-a.dev">
+      <br>
+      <label for="number" id="number-label"><small>Enter a number</small></label>
+      <input id="number" min="1" max="18927432891641" type="number" placeholder="1">
+      <br>
+      <label for="dropdown" id="dropdown-label"><small>What do you prefer?</small></label>
+      <select id="dropdown">
+        <option id="cat">Cat</option>
+        <option id="dog">Dog</option>
+      </select>
+      <br>
+      <fieldset>
+        <legend><small>Do you hate freeCodeCamp?</small></legend>
+        <input type="radio" id="yes" value="yes" name="hate" checked/>
+        <label for="yes"><small>Yes</small></label>
+        <br>
+        <input type="radio" id="no" value="no" name="hate"/>
+        <label for="no"><small>No</small></label>
+      </fieldset>
+      <fieldset>
+        <legend><small>If yes, why?</small></legend>
+        <input type="checkbox" id="uselesserror" value="uselesserror" name="why" checked/>
+        <label for="uselesserrors"><small>It gives you useless errors or yaps about your code being incorrect while it isn't</small></label>
+        <br>
+        <input type="checkbox" id="notunderstand" value="notunderstand" name="why"/>
+        <label for="notunderstand"><small>It gives not understandable errors</small></label>
+      </fieldset>
+      <br>
+      <textarea>Add more details</textarea>
+      <br>
+      <br>
+      <button type="submit" id="submit">Submit</button>
+  </body>
+</html>
